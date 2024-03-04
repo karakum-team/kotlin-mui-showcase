@@ -4,8 +4,10 @@ import mui.material.Skeleton
 import mui.material.SkeletonVariant.Companion.circular
 import mui.material.SkeletonVariant.Companion.rectangular
 import mui.material.SkeletonVariant.Companion.text
+import mui.system.sx
 import react.FC
 import react.Props
+import web.cssom.px
 
 val SkeletonShowcase = FC<Props> {
     Skeleton {
@@ -16,6 +18,10 @@ val SkeletonShowcase = FC<Props> {
         variant = circular
         width = 40
         height = 40
+
+        sx {
+            marginBottom = 4.px
+        }
     }
     Skeleton {
         variant = rectangular

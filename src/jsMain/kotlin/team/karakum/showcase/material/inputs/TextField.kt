@@ -13,21 +13,16 @@ import react.ReactNode
 import react.create
 import react.dom.html.ReactHTML.form
 import team.karakum.InputProps
-import team.karakum.autoComplete
-import team.karakum.noValidate
+import team.karakum.showcase.material.utils.ShowcaseContainer
 import web.cssom.Display
-import web.cssom.JustifyContent
 import web.html.InputType
 
 val TextFieldShowcase = FC<Props> {
-    Box {
+    ShowcaseContainer {
         sx {
             display = Display.grid
-            justifyContent = JustifyContent.left
         }
         component = form
-        noValidate = true
-        autoComplete = "off"
 
         Divider {
             variant = fullWidth
@@ -57,6 +52,10 @@ val TextFieldShowcase = FC<Props> {
             label = ReactNode("Start Day")
             variant = outlined
             type = InputType.date
+
+            InputLabelProps = jso {
+                shrink = true
+            }
         }
 
         Divider {

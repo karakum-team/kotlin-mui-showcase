@@ -48,7 +48,7 @@ private val MATERIAL_SHOWCASES: Array<out Showcase> = arrayOf(
     Showcase("material-ui/react-badge", "Badge", BadgeShowcase),
     Showcase("material-ui/react-chip", "Chip", ChipShowcase),
     Showcase("material-ui/react-divider", "Divider", DividerShowcase),
-    Showcase("material-ui/icons", "Divider", IconsShowcase),
+    Showcase("material-ui/icons", "Icons", IconsShowcase),
     Showcase("material-ui/react-list", "List", ListShowcase),
     Showcase("material-ui/react-table", "Table", TableShowcase),
     Showcase("material-ui/react-tooltip", "Tooltip", TooltipShowcase),

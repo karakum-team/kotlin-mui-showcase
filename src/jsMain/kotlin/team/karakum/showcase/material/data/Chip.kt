@@ -5,13 +5,16 @@ import mui.material.ChipVariant.Companion.outlined
 import react.FC
 import react.Props
 import react.ReactNode
+import team.karakum.showcase.material.utils.ShowcaseContainer
 
 val ChipShowcase = FC<Props> {
-    Chip {
-        label = ReactNode("Chip Filled")
-    }
-    Chip {
-        label = ReactNode("Chip Outlined")
-        variant = outlined
+    ShowcaseContainer {
+        Chip {
+            label = ReactNode("Chip Filled")
+        }
+        Chip {
+            label = ReactNode("Chip Outlined")
+            variant = outlined
+        }
     }
 }
